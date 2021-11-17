@@ -6,77 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arama Shop</title>
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="/css/arama.css">
 
-<style>
-    .header{
-        background-color: #FFE4C4;
-        text-align: center;
-        padding: 50px;
-    }
-.topnav{
-    overflow: hidden;
-    background-color: whitesmoke;
-}
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.column {
-  float: left;
-  padding: 10px;
-}
-.column.side{
-    
-    width: 25%;
-    
-}
-.column.middle{
-    width: 50%;
-   
-
-}
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-@media screen and (max-width:600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-}
-.body{
-    background-color: #FFE4C4;
-}
-.h1{
-    text-align: center;
-}
-.img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.9;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;}
-.footer{
-  background-color: whitesmoke;
-  padding: 5px;
-  text-align: center;}
-  .font-family{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-  }
-
-</style>
 
 </head>
 <body class="body">
@@ -89,21 +20,81 @@
     <a href="#">Link</a>
     <a href="#">Link</a>
     <a href="#">Link</a>
-  </div>
+</div>
     <div>
   
 </div>
 <div class="row font-family">
     <div class="column side">
       <h2>Order Now</h2>
-      <p><a href="https://www.facebook.com/profile.php?id=100068759447189">Our facebook page</a>
-         </p>
+      <p><a href="https://www.facebook.com/profile.php?id=100068759447189" title="go to facebook">Our facebook page</a>
+      </p>
+      <div>
+        <form>
+          <label id="user"
+           for="user">username</label>
+          <input type="text" 
+          required name="user"
+           autofocus placeholder="username">
+        </div>
+        <div>
+          <br>
+          <label id="passwd"
+           for="passwd">password</label>
+          <input type="password"
+           required name="password"
+            minlength="8" maxlength="12"
+             placeholder="password"> 
+        </div>
+        <div>
+          <br>
+          <label id="email" for="email">Email</label>
+          <input id="email" 
+          type="email" 
+          required
+           placeholder="email"
+            name="mail">
+        </div>
+        
+      
+        
+        <br>
+        <label id="type" for="type"> type of notebook</label>
+        <select name="type" id="type">
+          <optgroup label="big">
+            <option value="a4" selected>a5</option>
+          </optgroup>
+         <optgroup label="small">
+            <option value="a5">a4</option>
+         </optgroup>
+        </select>
+        <br>
+        <hr>
+        <textarea id="textarea" name="comment"  cols="30" rows="10" placeholder="leave feedback"></textarea>
+       
+        
+        
+    <br>
+     <hr>
+    <div>
+      <label id="search" for="search">search</label>
+      <input type="search">
+    </div>
+<br>
+<hr>
+   <div>
+     <label for="submit"></label>
+  <button id="submit">Submit</button>
+      </div>
+      </form>
+
+     
     </div>
     
     <div class="column middle font-family">
       <h1>For You</h1>
       <p><h4>why our shop ! simply because we offer a unique customised notebooks
-         whethear for your studies or your personal life,
+         whethear for your studies or your  personal life,
          it comes with a4 or a5 forms, with a beautiful well designed styles and 
          pictures</h4>
         </p>
@@ -117,6 +108,7 @@
       <h2>Note</h2>
       <p><h5 style="font-family: Arial, Helvetica, sans-serif;"> 
         our products is designed and producted By Us locally <br>
+        &copy; copyright reserved
         
         </h5></p>
     </div>
@@ -124,7 +116,7 @@
 <div class="footer"> 
      <h2>footer</h2></div>
 
-
+<span></span>
 
 </body>
 
